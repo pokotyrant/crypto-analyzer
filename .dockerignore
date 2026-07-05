@@ -1,0 +1,22 @@
+# Ignore python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local env configuration and sqlite database
+.env
+data/database.sqlite
+data/*.sqlite
+
+# Ignore git history
+.git/
+.gitignore
+
+# Ignore local checkpoints or test reports
+.pytest_cache/
+tests/
+.agents/
+walkthrough.md
+plan.md
+task.md

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Global Styles overrides */
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #0d1117;
+    font-family: 'Inter', sans-serif;
+    color: #e6edf3;
+}
+
+/* Header gradient styling */
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif !important;
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+    background: rgba(22, 27, 34, 0.6) !important;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.075) !important;
+    border-radius: 16px !important;
+    padding: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+    border-color: rgba(0, 242, 254, 0.3) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 242, 254, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Custom indicator metrics */
+.sentiment-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.sentiment-positive {
+    background-color: rgba(35, 134, 54, 0.2);
+    color: #3fb950;
+    border: 1px solid rgba(63, 185, 80, 0.4);
+}
+
+.sentiment-negative {
+    background-color: rgba(248, 81, 73, 0.2);
+    color: #f85149;
+    border: 1px solid rgba(248, 81, 73, 0.4);
+}
+
+.sentiment-neutral {
+    background-color: rgba(139, 148, 158, 0.2);
+    color: #8b949e;
+    border: 1px solid rgba(139, 148, 158, 0.4);
+}
+
+/* Custom Scrollbar for sleek UI */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0d1117;
+}
+::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8b949e;
+}
+
+/* Streamlit button custom styles */
+button[kind="primary"] {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%) !important;
+    color: #0d1117 !important;
+    font-weight: 600 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease;
+}
+
+button[kind="primary"]:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Sidebar Custom Styling */
+[data-testid="stSidebar"] {
+    background-color: #161b22 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glowing divider */
+.glowing-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00f2fe, #4facfe, transparent);
+    margin: 20px 0;
+}
